@@ -3,14 +3,17 @@ set -e
 
 echo "🚀 Setting up K-POP Artist Recognizer..."
 
+# Get the directory where the script is located
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
 # Install frontend dependencies
 echo "📦 Installing frontend dependencies..."
-cd /home/daytona/template/frontend
+cd "$SCRIPT_DIR/frontend"
 npm install
 
 # Create Python virtual environment
 echo "🐍 Creating Python virtual environment..."
-cd /home/daytona/template/backend
+cd "$SCRIPT_DIR/backend"
 python3 -m venv venv
 
 # Install backend dependencies

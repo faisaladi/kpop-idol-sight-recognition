@@ -1,5 +1,7 @@
 #!/bin/bash
-cd /home/daytona/template
+# Get the directory where the script is located
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$SCRIPT_DIR"
 
 # Start backend in background
 echo "Starting backend server on port 8080..."
@@ -13,7 +15,7 @@ sleep 3
 
 # Start frontend
 echo "Starting frontend server on port 3000..."
-cd /home/daytona/template/frontend
+cd "$SCRIPT_DIR/frontend"
 HOST_VALUE="${HOST:-0.0.0.0}"
 PORT_VALUE="${PORT:-3000}"
 

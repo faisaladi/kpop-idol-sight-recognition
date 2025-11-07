@@ -1,0 +1,11 @@
+{
+  "artists": [
+    {
+      "name": "Sample Artist",
+      "group": "Sample Group",
+      "encoding": [],
+      "note": "This is a placeholder. To add real K-POP artists, you need to:\n1. Get photos of K-POP artists\n2. Use the add_artist.py script to generate face encodings\n3. The encodings will be automatically added to this file"
+    }
+  ],
+  "instructions": "To add artists, run: python backend/add_artist.py <artist_name> <group_name> <image_path>"
+}

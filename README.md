@@ -1,6 +1,16 @@
 # K-POP Artist Recognizer
 
-A real-time face recognition app that identifies K-POP artists using your phone camera.
+> **Project Status**: 🟢 `Completed Portfolio Showcase`  
+> **Tech Stack**: Python (FastAPI, MediaPipe, NumPy, Scikit-Learn) + React (Vite, Tailwind CSS, react-webcam) + Docker  
+> **Architecture**: Local on-device computer vision inference (Zero cloud API dependency, zero external API costs)
+
+A real-time face recognition web application that detects and identifies K-POP artists through live camera feeds using MediaPipe facial landmarks and Cosine Similarity feature matching.
+
+## Key Highlights
+
+- **Edge-Ready & Privacy-Preserving**: Runs completely locally with FastAPI and MediaPipe — no photos or video frames are sent to third-party cloud services.
+- **Sub-Second Latency**: Optimized face detection mesh and vector comparisons for smooth, continuous live video stream analysis.
+- **Full-Stack Implementation**: Decoupled FastAPI backend and reactive Vite frontend packaged in a production-ready containerized Dockerfile.
 
 ## Features
 
